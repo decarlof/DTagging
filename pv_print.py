@@ -15,7 +15,7 @@ some scripts as needed.
 import os
 import sys
 import datetime
-import epics_pv_32ID as pv
+import pv_32ID as pv
 
 if __name__ == "__main__":
 
