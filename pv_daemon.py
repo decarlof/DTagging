@@ -17,7 +17,7 @@ import epics_pv_32ID as pv
 def pv_daemon():
     # set the experiment date 
     now = datetime.datetime.today().replace(tzinfo=pytz.timezone('US/Central'))
-
+    print now
     # set iso format time
     pv.timeISO.put(now.isoformat())
 
@@ -35,7 +35,7 @@ def pv_daemon():
 
 try:
     while True:
-        pv_daemon()
-        time.sleep(60)
+	pv_daemon()
+        time.sleep(3600)
 except (KeyboardInterrupt, SystemExit):
     pass    
