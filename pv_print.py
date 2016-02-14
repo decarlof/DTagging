@@ -135,8 +135,8 @@ if __name__ == "__main__":
     print "ccd_camera_y_dial:", pv.ccd_camera_y_dial.get()
     print "ccd_camera_z_dial:", pv.ccd_camera_z_dial.get()
 
-    print "ccd_rotation:", pv.ccd_rotation.get()
-    print "ccd_rotation_dial:", pv.ccd_rotation_dial.get()
+    print "ccd_yaw:", pv.ccd_yaw.get()
+    print "ccd_yaw_dial:", pv.ccd_yaw_dial.get()
     print "ccd_objective:", pv.ccd_objective.get()
     print "ccd_objective_dial:", pv.ccd_objective_dial.get()
 
