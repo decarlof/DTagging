@@ -19,18 +19,18 @@ def pv_daemon():
     now = datetime.datetime.today().replace(tzinfo=pytz.timezone('US/Central'))
     print now
     # set iso format time
-    pv.timeISO.put(now.isoformat())
+    pv.time_iso.put(now.isoformat())
 
     # get PI information
-    pi_name, pi_institution, pi_badge, pi_email = sch.find_pi_info(now)
-    pv.pi_name.put(pi_name)
-    pv.pi_institution.put(pi_institution)
-    pv.pi_badge.put(pi_badge)
-    pv.pi_email.put(pi_email)
+    user_name, user_institution, user_badge, user_email = sch.find_user_info(now)
+    pv.user_name.put(user_name)
+    pv.user_institution.put(user_institution)
+    pv.user_badge.put(user_badge)
+    pv.user_email.put(user_email)
 
     # get experiment information
     proposal_id, proposal_title = sch.find_experiment_info(now)
-    pv.proposal_id.put(proposal_id)
+    pv.proposal_number.put(proposal_id)
     pv.proposal_title.put(proposal_title)
 
 try:
