@@ -12,8 +12,8 @@ time_iso = PV('32idc01:userStringCalc1.GG')
 # User Status
 user_name = PV('32idc01:userStringCalc1.AA')
 user_affiliation = PV('32idc01:userStringCalc1.BB')
-user_email = PV('32idc01:userStringCalc1.CC')
-user_badge = PV('32idc01:userStringCalc1.DD')
+user_badge = PV('32idc01:userStringCalc1.CC')
+user_email = PV('32idc01:userStringCalc1.DD')
 proposal_number = PV('32idc01:userStringCalc1.EE')
 proposal_title = PV('32idc01:userStringCalc1.FF')
 
