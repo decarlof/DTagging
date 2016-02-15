@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
 
 # PV settings  
-    print "date time:", pv.date_time.get()
+    print "APS date time:", pv.date_time.get()
     print "current:", pv.current.get()
     print "top_up_status:", pv.top_up_status.get()
     print "source_energy:", pv.source_energy.get()
@@ -41,7 +41,8 @@ if __name__ == "__main__":
     print "user_badge:", pv.user_badge.get()
     print "proposal_number:", pv.proposal_number.get()
     print "proposal_title:", pv.proposal_title.get()
-
+    print "user_info_update_time:", pv.user_info_update_time.get()
+    
     # Beam Monitor
     print "beam_monitor_x:", pv.beam_monitor_x.get()
     print "beam_monitor_y:", pv.beam_monitor_y.get()

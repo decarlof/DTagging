@@ -16,10 +16,15 @@ import pv_32ID as pv
 
 def pv_daemon():
     # set the experiment date 
-    now = datetime.datetime.today().replace(tzinfo=pytz.timezone('US/Central'))
-    print now
+    now = datetime.datetime.today()
+
     # set iso format time
-    pv.time_iso.put(now.isoformat())
+    central = pytz.timezone('US/Central')
+    local_time = central.localize(now)
+    local_time_iso = local_time.isoformat()
+
+    pv.user_info_update_time.put(local_time_iso)
+    print local_time_iso
 
     # get PI information
     user_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
