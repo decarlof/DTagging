@@ -6,9 +6,6 @@ Transmission X-ray Microscope process variables grouped by component
 
 from epics import PV
 
-# Time iso
-time_iso = PV('32idc01:userStringCalc1.HH')
-
 # User Status
 user_name = PV('32idc01:userStringCalc1.AA')
 user_affiliation = PV('32idc01:userStringCalc1.BB')
@@ -19,7 +16,7 @@ proposal_title = PV('32idc01:userStringCalc1.FF')
 user_info_update_time= PV('32idc01:userStringCalc1.GG')
 
 # Beamline Status
-date_time = PV('S:IOC:timeOfDayForm2SI')
+date_time = PV('S:IOC:timeOfDayISO8601')
 current = PV('S:SRcurrentAI')
 top_up_status = PV('S:TopUpStatus')
 source_energy = PV('ID32ds:Energy.VAL')
