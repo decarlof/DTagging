@@ -60,7 +60,6 @@ import dmagic.scheduling as sch
 import pv_32ID as pv
 
 __author__ = "Francesco De Carlo"
-__credits__ = "John Hammonds"
 __copyright__ = "Copyright (c) 2016, UChicago Argonne, LLC."
 __docformat__ = 'restructuredtext en'
 
