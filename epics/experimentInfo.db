@@ -10,7 +10,7 @@ record(waveform, "$(P)UserEmail") {  field(SCAN, "Passive")
 record(waveform, "$(P)UserInstitution") {  field(SCAN, "Passive")
   field(DTYP, "Soft Channel")  field(NELM, "256")  field(FTVL, "CHAR")}
 
-record(waveform, "$(P)ProposalNumber") {  field(SCAN, "Passive")
+record(waveform, "$(P)ProposalNumber") {  field(SCAN, "Pa32idc01:userStringCalc1.GGssive")
   field(DTYP, "Soft Channel")  field(NELM, "256")  field(FTVL, "CHAR")}
 
 record(waveform, "$(P)ProposalTitle") {  field(SCAN, "Passive")
@@ -22,4 +22,7 @@ record(waveform, "$(P)SampleName") {  field(SCAN, "Passive")
 record(waveform, "$(P)SampleDescription") {  field(SCAN, "Passive")
   field(DTYP, "Soft Channel")  field(NELM, "256")  field(FTVL, "CHAR")}
 
+record(waveform, "$(P)UserInfoUpdate") {  field(SCAN, "Passive")
+  field(DTYP, "Soft Channel")  field(NELM, "256")  field(FTVL, "CHAR")}
 
+32idc01:userStringCalc1.GG
