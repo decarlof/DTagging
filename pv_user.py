@@ -81,7 +81,10 @@ def pv_daemon():
     pv.user_affiliation.put(user_institution)
     pv.user_email.put(user_email)
     pv.user_badge.put(user_badge)
-
+    
+    file_name = pv.file_name.get()
+    pv.sample_name.put(file_name)
+    
     # get experiment information
     proposal_number, proposal_title = sch.find_experiment_info(now)
     pv.proposal_number.put(proposal_number)

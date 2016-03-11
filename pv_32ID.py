@@ -22,6 +22,8 @@ user_email = PV('32idcTXM:UserEmail')
 proposal_number = PV('32idcTXM:ProposalNumber')
 proposal_title = PV('32idcTXM:ProposalTitle')
 user_info_update_time= PV('32idcTXM:UserInfoUpdate')
+sample_name = PV('32idcTXM:SampleName')
+file_name = PV('32idcPG3:HDF1:FileName')
 
 # Beamline Status
 date_time = PV('S:IOC:timeOfDayISO8601')
