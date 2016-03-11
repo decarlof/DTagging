@@ -5,7 +5,7 @@ record(waveform, "$(P)UserName") {
     field(DTYP, "Soft Channel")
     # Number of Elements in Array - refers to the number of values of the type specified in FTVL that will be stored
     field(NELM, "256")
-    # Field Type of VAlue - valid values are STRING, CHAR, UCHAR, SHORT, USHORT, LONG, ULONG, FLOAT, DOUBLE, ENUM
+    # Field Type of VAlue - valid values are CHAR, STRING, UCHAR, SHORT, USHORT, LONG, ULONG, FLOAT, DOUBLE, ENUM
     field(FTVL, "CHAR")
 }
 
