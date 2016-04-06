@@ -37,6 +37,47 @@ beam_monitor_y_dial = PV('32idcTXM:nf:c0:m3.DVAL')
 filter_x = PV('32idcTXM:xps:c2:m1.VAL')
 filter_x_dial = PV('32idcTXM:xps:c2:m1.DVAL')
 
+# microCT
+table_x_upstream = PV('32idc02:m1.VAL')
+table_y_upstream = PV('32idc02:m2.VAL')
+table_y_downstream = PV('32idc02:m3.VAL')
+table_x_downstream = PV('32idc02:m4.VAL')
+table_x_upstream_dial = PV('32idc02:m1.DVAL')
+table_y_upstream_dial = PV('32idc02:m2.DVAL')
+table_y_downstream_dial = PV('32idc02:m3.DVAL')
+table_x_downstream_dial = PV('32idc02:m4.DVAL')
+
+# Sample microCT
+sample_x_mct = PV('32idc02:m31.VAL')
+sample_y_mct = PV('32idc02:m25.VAL')
+sample_top_x_mct = PV('32idc01:m104.VAL')
+sample_top_z_mct = PV('32idc01:m105.VAL')
+sample_rotary_mct = PV('32idc02:m11.VAL')
+sample_yaw_mct = PV('32idc02:m30.VAL')
+sample_pitch_mct = PV('32idc02:m29.VAL')
+
+sample_x_mct_dial = PV('32idc02:m31.DVAL')
+sample_y_mct_dial = PV('32idc02:m25.DVAL')
+sample_top_x_mct_dial = PV('32idc01:m104.DVAL')
+sample_top_z_mct_dial = PV('32idc01:m105.DVAL')
+sample_rotary_mct_dial = PV('32idc02:m11.DVAL')
+sample_yaw_mct_dial = PV('32idc02:m30.DVAL')
+sample_pitch_mct_dial = PV('32idc02:m29.DVAL')
+
+# CCD camera
+ccd_camera_z_mct = PV('32idc02:m20.VAL')
+ccd_camera_z_mct_dial = PV('32idc02:m20.DVAL')
+ccd_selector_mct =  PV('32idc02:m21.VAL')
+ccd_selector_mct_dial =  PV('32idc02:m21.DVAL')
+ccd_focus_mct =  PV('32idc02:m22.VAL')
+ccd_focus_mct_dial =  PV('32idc02:m22.DVAL')
+
+scintillator_x_mct = PV('32idc01:m101.VAL')
+scintillator_y_mct = PV('32idc01:m102.VAL')
+scintillator_x_mct_dial = PV('32idc01:m101.DAL')
+scintillator_y_mct_dial = PV('32idc01:m102.DVAL')
+
+# TXM
 # Diffuser
 diffuser = PV('32idcTXM:xps:c1:m6.VAL')
 diffuser_dial = PV('32idcTXM:xps:c1:m6.DVAL')
