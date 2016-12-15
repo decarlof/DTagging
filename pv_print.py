@@ -24,16 +24,6 @@ if __name__ == "__main__":
     instrument_name = 'TXM'
 
 
-# PV settings  
-    print "APS date time:", pv.date_time.get()
-    print "current:", pv.current.get()
-    print "top_up_status:", pv.top_up_status.get()
-    print "source_energy:", pv.source_energy.get()
-    print "source_gap:", pv.source_gap.get()
-    print "energy_dcm:", pv.energy_dcm.get()
-    print "mirror_x:", pv.mirror_x.get()
-    print "mirror_y:", pv.mirror_y.get()
-
     # User Status
     print "user_name:", pv.user_name.get()
     print "user_affiliation:", pv.user_affiliation.get()
@@ -42,6 +32,16 @@ if __name__ == "__main__":
     print "proposal_number:", pv.proposal_number.get()
     print "proposal_title:", pv.proposal_title.get()
     print "user_info_update_time:", pv.user_info_update_time.get()
+
+    # Beamline Status
+    print "APS date time:", pv.date_time.get()
+    print "current:", pv.current.get()
+    print "top_up_status:", pv.top_up_status.get()
+    print "source_energy:", pv.source_energy.get()
+    print "source_gap:", pv.source_gap.get()
+    print "energy_dcm:", pv.energy_dcm.get()
+    print "mirror_x:", pv.mirror_x.get()
+    print "mirror_y:", pv.mirror_y.get()
     
     # Beam Monitor
     print "beam_monitor_x:", pv.beam_monitor_x.get()
