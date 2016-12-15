@@ -20,13 +20,13 @@ Pre-requisites
 --------------
 
 * Load in your EPICS ioc the ExperimentInfo `db <https://github.com/decarlof/DTagging/tree/master/epics>`_ file:
-    * dbLoadRecords("$(TOP)/32idcTXMApp/Db/experimentInfo.db", "P=32idcTXM:")
+    * Example: dbLoadRecords("$(TOP)/32idcTXMApp/Db/experimentInfo.db", "P=32idcTXM:")
 
 * Add a link to your main MEDM screen to load the ExperimentInfo `medm <https://github.com/decarlof/DTagging/tree/master/epics>`_ file.
 
 * Install `PyEpics <http://cars9.uchicago.edu/software/python/pyepics3/index.html>`_
     * pip install pyepics
-    * edit your .cshrc and add: setenv PYEPICS_LIBCA /APSshare/epics/extensions-base/3.14.12.2-ext1/lib/linux-x86_64/libca.so
+    * edit your .cshrc to set PYEPICS_LIBCA. Example: setenv PYEPICS_LIBCA /APSshare/epics/extensions-base/3.14.12.2-ext1/lib/linux-x86_64/libca.so
     
 * Install `DMagic <http://dmagic.readthedocs.io/>`_
     * item 3 
