@@ -1,14 +1,14 @@
 
 file {
-	name="/net/s32dserv/xorApps/epics/synApps_5_6/ioc/32idsectorApp/op/adl/32id_user_info.adl"
+	name="/net/s32dserv/xorApps/epics/synApps_5_6/ioc/32idsectorApp/op/adl/32id_user_info_wave.adl"
 	version=030107
 }
 display {
 	object {
-		x=1285
-		y=124
+		x=118
+		y=47
 		width=385
-		height=179
+		height=230
 	}
 	clr=14
 	bclr=4
@@ -108,10 +108,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.AA"
+		chan="32idcTXM:UserName"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -136,10 +137,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.BB"
+		chan="32idcTXM:UserInstitution"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -164,10 +166,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.CC"
+		chan="32idcTXM:UserBadge"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -192,10 +195,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.DD"
+		chan="32idcTXM:UserEmail"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -220,10 +224,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.EE"
+		chan="32idcTXM:ProposalNumber"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -248,10 +253,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.FF"
+		chan="32idcTXM:ProposalTitle"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -276,10 +282,11 @@ text {
 		height=20
 	}
 	control {
-		chan="32idc01:userStringCalc1.GG"
+		chan="32idcTXM:UserInfoUpdate"
 		clr=14
 		bclr=4
 	}
+	format="string"
 	limits {
 	}
 }
@@ -308,6 +315,65 @@ text {
 		clr=14
 		bclr=4
 	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=181
+		width=120
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Name:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=135
+		y=181
+		width=250
+		height=20
+	}
+	control {
+		chan="32idcTXM:SampleName"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=5
+		y=203
+		width=120
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Des.:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=135
+		y=203
+		width=250
+		height=20
+	}
+	control {
+		chan="32idcTXM:SampleDescription"
+		clr=14
+		bclr=4
+	}
+	format="string"
 	limits {
 	}
 }
