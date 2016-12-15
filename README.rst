@@ -3,21 +3,34 @@ DTagging
 ========
 
 `DTagging <https://github.com/decarlof/DTagging>`_  is used at the Advanced Photon Source Imaging Group
-to adds experiment tags to an hdf file collected using 
-`area detector <http://cars9.uchicago.edu/software/epics/areaDetector.html>`_
+to generate EPICS Process Variables (PVs)for storing the information associated with the current user including:
 
+* User Name
+* User Institution
+* User Badge
+* User e-mail
+* General User Proposal (GUP) number 
+* Proposal Title
 
+The current user information is obtained from the APS scheduluing system running at a predefined beamline.
+This information can be easely stored in all hdf files collected using `area detector <http://cars9.uchicago.edu/software/epics/areaDetector.html>`_
+see `DXFile <http://dxfile.readthedocs.io/en/latest/source/demo/doc.areadetector.html>`_ for more details.
 
 Pre-requisites
 --------------
 
+* Load in your EPICS ioc the ExperimentInfo `db <https://github.com/decarlof/DTagging/tree/master/epics>`_ file:
+    * dbLoadRecords("$(TOP)/32idcTXMApp/Db/experimentInfo.db", "P=32idcTXM:")
+
+* Add a link to your main MEDM screen to load the ExperimentInfo `medm <https://github.com/decarlof/DTagging/tree/master/epics>`_ file.
+
 * Install `PyEpics <http://cars9.uchicago.edu/software/python/pyepics3/index.html>`_
-    * item 1 
-    * item 2
+    * pip install pyepics
+    * edit your .cshrc and add: setenv PYEPICS_LIBCA /APSshare/epics/extensions-base/3.14.12.2-ext1/lib/linux-x86_64/libca.so
     
 * Install `DMagic <http://dmagic.readthedocs.io/>`_
     * item 3 
     * item 4
    
 
-========DXchange========`DXchange <https://github.com/data-exchange/DXchange>`_ provides an interface with`tomoPy <http://tomopy.readthedocs.org/>`_ and raw tomographic data collected at different synchrotron facilities including the Data Exchangefile format (`DXfile <http://dxfile.readthedocs.org/>`_),currently in use at the Advanced Photon Source beamline 2-BM and 32-ID, at the Swiss Light Source Tomcat beamline and at the Elettra SYRMEP beamline.Documentation-------------* http://dxchange.readthedocs.ioFeatures--------* Scientific Data Exchange file format.* Readers for tomographic data files collected at different facilities.* Writers for different file formats.Highlights----------* Based on Hierarchical Data Format 5 (HDF5).* Focuses on technique rather than instrument descriptions.* Provenance tracking for understanding analysis steps and results.* Ease of readability.    Contribute----------* Documentation: https://github.com/data-exchange/dxchange/tree/master/doc* Issue Tracker: https://github.com/data-exchange/dxchange/issues* Source Code: https://github.com/data-exchange/dxchange
+Features--------* Generate PVs containing the current experiment/user information
