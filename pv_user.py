@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # #########################################################################
-# Copyright (c) 2015, UChicago Argonne, LLC. All rights reserved.         #
+# Copyright (c) 2015-2016, UChicago Argonne, LLC. All rights reserved.    #
 #                                                                         #
 # Copyright 2015. UChicago Argonne, LLC. This software was produced       #
 # under U.S. Government contract DE-AC02-06CH11357 for Argonne National   #
@@ -60,7 +60,7 @@ import dmagic.scheduling as sch
 import pv_beamline as pv
 
 __author__ = "Francesco De Carlo"
-__copyright__ = "Copyright (c) 2016, UChicago Argonne, LLC."
+__copyright__ = "Copyright (c) 2015-2016, UChicago Argonne, LLC."
 __docformat__ = 'restructuredtext en'
 
 def pv_daemon():
