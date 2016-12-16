@@ -45,7 +45,7 @@ Using DTagging
 
 * Customize the DTagging/pv_beamline.py file to match the PV names in use at your beamline then run::
 
-    python pv_user.py
+    python pv_update.py
     
 
 pv_user.py reads the current user information from the scheduling system and update the user information PVs.
