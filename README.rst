@@ -35,7 +35,7 @@ To access the `APS scheduling system <https://schedule.aps.anl.gov/>`__ you need
 Using DTagging
 --------------
 
-* Clone the `DTagging <https://github.com/decarlof/DTagging>`_ project from its `GitHub <https://github.com>`_ repository::    git clone https://github.com/decarlof/DTagging.git DTaggingthen::    cd DTagging
+* Clone the `DTagging <https://github.com/decarlof/DTagging>`_ project from its `GitHub <https://github.com>`_ repository::    git clone https://github.com/decarlof/DTagging.git DTaggingthen::    cd DTagging
 
 * Load in your EPICS ioc the DTagging/epics/experimentInfo.db file. Example::
     
