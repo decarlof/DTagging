@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Transmission X-ray Microscope process variables grouped by component
+User info process variables. Please customize the prefix (32idcTXM:) to match the one used by your IOC
 
 """
 
