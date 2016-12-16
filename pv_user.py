@@ -57,7 +57,7 @@ import sys
 
 # set ~/scheduling.ini to match your configuration
 import dmagic.scheduling as sch
-import pv_32ID as pv
+import pv_beamline as pv
 
 __author__ = "Francesco De Carlo"
 __copyright__ = "Copyright (c) 2016, UChicago Argonne, LLC."
