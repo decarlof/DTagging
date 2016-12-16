@@ -36,9 +36,9 @@ Using DTagging
 --------------
 
 * Clone the `DTagging <https://github.com/decarlof/DTagging>`_  from `GitHub <https://github.com>`_ repository::    git clone https://github.com/decarlof/DTagging.git DTaggingthen::    cd DTagging
-    
+
 * Load in your EPICS ioc the DTagging/epics/experimentInfo.db file:
-    * Ex: dbLoadRecords("$(TOP)/32idcTXMApp/Db/experimentInfo.db", "P=32idcTXM:")
+    * Example: dbLoadRecords("$(TOP)/32idcTXMApp/Db/experimentInfo.db", "P=32idcTXM:")
 
 * Add a link to your main MEDM screen to load the DTagging/epics/experimentInfo.adl file.
 
