@@ -37,7 +37,7 @@ Using DTagging
 
 * Clone the `DTagging <https://github.com/decarlof/DTagging>`_ project from its `GitHub <https://github.com>`_ repository::    git clone https://github.com/decarlof/DTagging.git DTaggingthen::    cd DTagging
 
-* Load 
+* Load in your EPICS ioc the 
 
 * Add a link to your main MEDM screen to load the DTagging/epics/experimentInfo.adl file.
 
