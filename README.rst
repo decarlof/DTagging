@@ -37,6 +37,8 @@ Using DTagging
 
 * Clone the `DTagging <https://github.com/decarlof/DTagging>`_ project from its `GitHub <https://github.com>`_ repository::    git clone https://github.com/decarlof/DTagging.git DTaggingthen::    cd DTagging
 
+* Load 
+
 * Add a link to your main MEDM screen to load the DTagging/epics/experimentInfo.adl file.
 
 * Customize the DTagging/pv_beamline.py file to match the PV names in use at your beamline then run::
