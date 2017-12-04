@@ -47,8 +47,13 @@
 # #########################################################################
 
 """
-Module to print user and proposal info PVs
+Module to print(user and proposal info PVs
 """
+
+from __future__ import (absolute_import, division, print_function,
+                        unicode_literals)
+
+
 import os
 import sys
 import datetime
@@ -62,11 +67,11 @@ if __name__ == "__main__":
 
 
     # User Status
-    print "user_name:", pv.user_name.get()
-    print "user_affiliation:", pv.user_affiliation.get()
-    print "user_email:", pv.user_email.get()
-    print "user_badge:", pv.user_badge.get()
-    print "proposal_number:", pv.proposal_number.get()
-    print "proposal_title:", pv.proposal_title.get()
-    print "user_info_update_time:", pv.user_info_update_time.get()
+    print("user_name:", "".join([chr(c) for c in pv.user_name.get()]))
+    print("user_affiliation:", "".join([chr(c) for c in pv.user_affiliation.get()]))
+    print("user_email:", "".join([chr(c) for c in pv.user_email.get()]))
+    print("user_badge:", "".join([chr(c) for c in pv.user_badge.get()]))
+    print("proposal_number:", "".join([chr(c) for c in pv.proposal_number.get()]))
+    print("proposal_title:", "".join([chr(c) for c in pv.proposal_title.get()]))
+    print("user_info_update_time:", "".join([chr(c) for c in pv.user_info_update_time.get()]))
 
