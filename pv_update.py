@@ -84,9 +84,10 @@ def pv_daemon():
     pv.user_badge.put(user_badge)
       
     # get experiment information
-    proposal_number, proposal_title = sch.find_experiment_info(now)
+    proposal_number, proposal_title, experiment_date_year_month = sch.find_experiment_info(now)
     pv.proposal_number.put(proposal_number)
     pv.proposal_title.put(proposal_title)
+    pv.experiment_date.put(experiment_date_year_month)
 
 try:
     while True:
