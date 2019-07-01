@@ -76,8 +76,9 @@ def pv_daemon():
     print local_time_iso
 
     # get PI information
-    user_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
+    user_name, user_last_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
     pv.user_name.put(user_name)
+    pv.user_last_name.put(user_last_name)    
     pv.user_affiliation.put(user_institution)
     pv.user_email.put(user_email)
     pv.user_badge.put(user_badge)
