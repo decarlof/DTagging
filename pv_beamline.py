@@ -47,7 +47,7 @@
 # #########################################################################
 
 """
-User info process variable definition. Please customize the prefix (32idcTXM:) to match the one used by your IOC
+User info process variable definition. Please customize the prefix (2bmS1:) to match the one used by your IOC
 
 """
 
@@ -58,13 +58,13 @@ __copyright__ = "Copyright (c) 2015-2016, UChicago Argonne, LLC."
 __docformat__ = 'restructuredtext en'
 
 # User Status
-user_name = PV('32idcTXM:UserName')
-user_affiliation = PV('32idcTXM:UserInstitution')
-user_badge = PV('32idcTXM:UserBadge')
-user_email = PV('32idcTXM:UserEmail')
-proposal_number = PV('32idcTXM:ProposalNumber')
-proposal_title = PV('32idcTXM:ProposalTitle')
-user_info_update_time= PV('32idcTXM:UserInfoUpdate')
-file_name = PV('32idcPG3:HDF1:FileName')
-file_path = PV('32idcPG3:HDF1:FilePath_RBV')
+user_name = PV('2bmS1:ExpInfo:UserName')
+user_affiliation = PV('2bmS1:ExpInfo:UserInstitution')
+user_badge = PV('2bmS1:ExpInfo:UserBadge')
+user_email = PV('2bmS1:ExpInfo:UserEmail')
+proposal_number = PV('2bmS1:ExpInfo:ProposalNumber')
+proposal_title = PV('2bmS1:ExpInfo:ProposalTitle')
+user_info_update_time= PV('2bmS1:ExpInfo:UserInfoUpdate')
+#file_name = PV('32idcPG3:HDF1:FileName')
+#file_path = PV('32idcPG3:HDF1:FilePath_RBV')
 
