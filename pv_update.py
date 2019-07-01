@@ -89,7 +89,7 @@ def pv_daemon():
 
 try:
     while True:
-	pv_daemon()
-        time.sleep(3600)
+        pv_daemon()
+        time.sleep(14400)
 except (KeyboardInterrupt, SystemExit):
     pass    
