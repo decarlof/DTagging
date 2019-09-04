@@ -1,14 +1,14 @@
 
 file {
-	name="/net/s32dserv/xorApps/epics/synApps_5_6/ioc/32idsectorApp/op/adl/32id_user_info_wave.adl"
-	version=030107
+	name="/net/s2dserv/xorApps/epics/synApps_5_8/ioc/2bmS1/2bmS1App/op/adl/experiment_info.adl"
+	version=030111
 }
 display {
 	object {
-		x=118
-		y=47
-		width=385
-		height=230
+		x=449
+		y=711
+		width=500
+		height=940
 	}
 	clr=14
 	bclr=4
@@ -89,212 +89,9 @@ display {
 }
 text {
 	object {
-		x=5
-		y=5
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="User Name:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=5
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:UserName"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=27
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Institution:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=27
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:UserInstitution"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=49
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Badge #:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=49
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:UserBadge"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=71
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="e-mail:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=71
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:UserEmail"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=93
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="GUP #:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=93
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:ProposalNumber"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=115
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Title:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=115
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:ProposalTitle"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=137
-		width=120
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Update Time:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=135
-		y=137
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:UserInfoUpdate"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
-	object {
-		x=5
-		y=158
-		width=120
+		x=114
+		y=162
+		width=490
 		height=20
 	}
 	"basic attribute" {
@@ -303,77 +100,1296 @@ text {
 	textix="Time:"
 	align="horiz. right"
 }
-"text entry" {
-	object {
-		x=135
-		y=158
-		width=250
-		height=20
-	}
-	control {
-		chan="S:IOC:timeOfDayISO8601"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
+composite {
 	object {
 		x=5
-		y=181
-		width=120
-		height=20
+		y=374
+		width=490
+		height=160
 	}
-	"basic attribute" {
-		clr=14
+	"composite name"=""
+	children {
+		rectangle {
+			object {
+				x=5
+				y=374
+				width=490
+				height=160
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
+		text {
+			object {
+				x=114
+				y=378
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Num Projections"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=400
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Num White Fields"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=422
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Num Dark Fields"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=488
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sample In Position"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=510
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sample Out Position"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=444
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sample Rotation Start"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=466
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sample Rotation End"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=378
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:NumProjections"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=400
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:NumWhiteImages"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=422
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:NumDarkImages"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=444
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleRotationStart"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=466
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleRotationEnd"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=488
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleInPosition"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=510
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleOutPosition"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
 	}
-	textix="Sample Name:"
-	align="horiz. right"
 }
-"text entry" {
-	object {
-		x=135
-		y=181
-		width=250
-		height=20
-	}
-	control {
-		chan="32idcTXM:SampleName"
-		clr=14
-		bclr=4
-	}
-	format="string"
-	limits {
-	}
-}
-text {
+composite {
 	object {
 		x=5
-		y=203
-		width=120
-		height=20
+		y=536
+		width=490
+		height=94
 	}
-	"basic attribute" {
-		clr=14
+	"composite name"=""
+	children {
+		text {
+			object {
+				x=114
+				y=562
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Use Furnace"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=540
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="White Field Motion"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=584
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Furnace In Position"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=606
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Furnace Out Position"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=606
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:FurnaceOutPosition"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=584
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:FurnaceInPosition"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		menu {
+			object {
+				x=243
+				y=562
+				width=150
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UseFurnace"
+				clr=14
+				bclr=51
+			}
+		}
+		menu {
+			object {
+				x=243
+				y=540
+				width=150
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:WhiteFieldMotion"
+				clr=14
+				bclr=51
+			}
+		}
+		rectangle {
+			object {
+				x=5
+				y=536
+				width=490
+				height=94
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
 	}
-	textix="Sample Des.:"
-	align="horiz. right"
 }
-"text entry" {
+composite {
 	object {
-		x=135
-		y=203
-		width=250
-		height=20
+		x=5
+		y=632
+		width=490
+		height=180
 	}
-	control {
-		chan="32idcTXM:SampleDescription"
-		clr=14
-		bclr=4
+	"composite name"=""
+	children {
+		rectangle {
+			object {
+				x=5
+				y=632
+				width=490
+				height=180
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
+		text {
+			object {
+				x=114
+				y=636
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Scan Type"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=658
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sleep Time (s)"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=680
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Vert. Scan Start"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=702
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Vert. Scan End"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=724
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Vert. Scan Step Size"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=746
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Horiz. Scan Start"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=768
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Horiz. Scan End"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=790
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Horiz. Scan Step Size"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=790
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:HorizontalScanStepSize"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=768
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:HorizontalScanEnd"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=746
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:HorizontalScanStart"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=724
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:VerticalScanStepSize"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=702
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:VerticalScanEnd"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=680
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:VerticalScanStart"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=658
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SleepTime"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		menu {
+			object {
+				x=243
+				y=636
+				width=150
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ScanType"
+				clr=14
+				bclr=51
+			}
+		}
 	}
-	format="string"
-	limits {
+}
+composite {
+	object {
+		x=5
+		y=212
+		width=490
+		height=160
+	}
+	"composite name"=""
+	children {
+		rectangle {
+			object {
+				x=5
+				y=212
+				width=490
+				height=160
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
+		text {
+			object {
+				x=114
+				y=215
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Lens Mag (x)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=215
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:LensMagnification"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=237
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Scin Type"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=237
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ScintillatorType"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=303
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Filters"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=303
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:Filters"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=325
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleName"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=325
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sample Name"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=259
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Scin Thickness (um)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=259
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ScintillatorThickness"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=281
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sam-Det dist (mm)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=281
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleDetectorDistance"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text update" {
+			object {
+				x=243
+				y=347
+				width=249
+				height=20
+			}
+			monitor {
+				chan="$(PG)HDF1:FileName"
+				clr=54
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=347
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="File Name"
+			align="horiz. right"
+		}
+	}
+}
+composite {
+	object {
+		x=5
+		y=814
+		width=490
+		height=120
+	}
+	"composite name"=""
+	children {
+		rectangle {
+			object {
+				x=5
+				y=814
+				width=490
+				height=120
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
+		text {
+			object {
+				x=114
+				y=820
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Station"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=820
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:Station"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=842
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Camera IOC Prefix"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=842
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:CameraIOCPrefix"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=864
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="PI Full Name"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=864
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UserName"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		menu {
+			object {
+				x=243
+				y=886
+				width=150
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:RemoteDataTransfer"
+				clr=14
+				bclr=51
+			}
+		}
+		text {
+			object {
+				x=114
+				y=886
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Remote Data Transfer"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=908
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="File Name"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=908
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:FileName"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+	}
+}
+composite {
+	object {
+		x=5
+		y=5
+		width=490
+		height=205
+	}
+	"composite name"=""
+	children {
+		"text entry" {
+			object {
+				x=243
+				y=74
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UserBadge"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=118
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ProposalTitle"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=96
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ProposalNumber"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=30
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="PI Last Name:"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=96
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="GUP #:"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=118
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Title:"
+			align="horiz. right"
+		}
+		text {
+			object {
+				x=114
+				y=74
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Badge #:"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=162
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UserInfoUpdate"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=162
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Update Time:"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=184
+				width=249
+				height=20
+			}
+			control {
+				chan="S:IOC:timeOfDayISO8601"
+				clr=14
+				bclr=4
+			}
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=8
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Experiment Year-Month:"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=8
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ExperimentYearMonth"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"text entry" {
+			object {
+				x=243
+				y=30
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UserLastName"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		"shell command" {
+			object {
+				x=9
+				y=186
+				width=119
+				height=20
+			}
+			command[0] {
+				label="Start DTagging"
+				name="/local/user2bmb/conda/DTagging/dtagging.sh &"
+			}
+			clr=14
+			bclr=51
+			label="- Update@arcturus"
+		}
+		text {
+			object {
+				x=114
+				y=140
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Institution:"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=140
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UserInstitution"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=114
+				y=52
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="e-mail:"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=243
+				y=52
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:UserEmail"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		rectangle {
+			object {
+				x=5
+				y=5
+				width=490
+				height=205
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
 	}
 }
