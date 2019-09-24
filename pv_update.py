@@ -73,7 +73,7 @@ def pv_daemon():
     local_time_iso = local_time.isoformat()
 
     pv.user_info_update_time.put(local_time_iso)
-    print local_time_iso
+    print (local_time_iso)
 
     # get PI information
     user_name, user_last_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
