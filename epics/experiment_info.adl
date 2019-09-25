@@ -1,6 +1,6 @@
 
 file {
-	name="/net/s2dserv/xorApps/epics/synApps_5_8/ioc/2bmS1/2bmS1App/op/adl/experiment_info.adl"
+	name="/home/beams/7BM/experiment_info.adl"
 	version=030111
 }
 display {
@@ -1107,289 +1107,278 @@ composite {
 		}
 	}
 }
-composite {
+"text entry" {
+	object {
+		x=243
+		y=74
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:UserBadge"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=118
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:ProposalTitle"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=96
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:ProposalNumber"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=30
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="PI Last Name:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=96
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="GUP #:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=118
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Title:"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=74
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Badge #:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=162
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:UserInfoUpdate"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=162
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Update Time:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=184
+		width=249
+		height=20
+	}
+	control {
+		chan="S:IOC:timeOfDayISO8601"
+		clr=14
+		bclr=4
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=8
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Experiment Year-Month:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=8
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:ExperimentYearMonth"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=30
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:UserLastName"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=9
+		y=186
+		width=119
+		height=20
+	}
+	command[0] {
+		label="Start DTagging"
+		name="/local/7bmb/conda/DTagging/dtagging.sh &"
+	}
+	clr=14
+	bclr=51
+	label="- Update@karman"
+}
+text {
+	object {
+		x=114
+		y=140
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Institution:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=140
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:UserInstitution"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=52
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="e-mail:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=52
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:UserEmail"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+rectangle {
 	object {
 		x=5
 		y=5
 		width=490
 		height=205
 	}
-	"composite name"=""
-	children {
-		"text entry" {
-			object {
-				x=243
-				y=74
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:UserBadge"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=118
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:ProposalTitle"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=96
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:ProposalNumber"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=30
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="PI Last Name:"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=96
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="GUP #:"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=118
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Title:"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=74
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Badge #:"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=162
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:UserInfoUpdate"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=162
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Update Time:"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=184
-				width=249
-				height=20
-			}
-			control {
-				chan="S:IOC:timeOfDayISO8601"
-				clr=14
-				bclr=4
-			}
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=8
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Experiment Year-Month:"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=8
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:ExperimentYearMonth"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=30
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:UserLastName"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"shell command" {
-			object {
-				x=9
-				y=186
-				width=119
-				height=20
-			}
-			command[0] {
-				label="Start DTagging"
-				name="/local/user2bmb/conda/DTagging/dtagging.sh &"
-			}
-			clr=14
-			bclr=51
-			label="- Update@arcturus"
-		}
-		text {
-			object {
-				x=114
-				y=140
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Institution:"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=140
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:UserInstitution"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=52
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="e-mail:"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=52
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:UserEmail"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		rectangle {
-			object {
-				x=5
-				y=5
-				width=490
-				height=205
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-		}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
 	}
 }
