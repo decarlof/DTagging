@@ -57,7 +57,7 @@ import sys
 
 # set ~/scheduling.ini to match your configuration
 import dmagic.scheduling as sch
-import pv_beamline as pv
+import pv_beamline_2bm as pv
 
 __author__ = "Francesco De Carlo"
 __copyright__ = "Copyright (c) 2015-2016, UChicago Argonne, LLC."
@@ -77,6 +77,7 @@ def pv_daemon():
 
     # get PI information
     user_name, user_last_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
+    print(user_name, user_last_name, user_institution, user_badge, user_email)
     pv.user_name.put(user_name)
     pv.user_last_name.put(user_last_name)    
     pv.user_affiliation.put(user_institution)
