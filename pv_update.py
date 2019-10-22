@@ -77,7 +77,7 @@ def pv_daemon():
 
     # get PI information
     user_name, user_last_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
-    print(user_name, user_last_name, user_institution, user_badge, user_email)
+    # print(user_name, user_last_name, user_institution, user_badge, user_email)
     pv.user_name.put(user_name)
     pv.user_last_name.put(user_last_name)    
     pv.user_affiliation.put(user_institution)
@@ -89,7 +89,7 @@ def pv_daemon():
     pv.proposal_number.put(proposal_number)
     pv.proposal_title.put(proposal_title)
     pv.experiment_date.put(experiment_date_year_month)
-
+    # print(proposal_number, proposal_title, experiment_date_year_month)
 try:
     while True:
         pv_daemon()
