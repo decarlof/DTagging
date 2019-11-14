@@ -7,6 +7,7 @@ $(P)ExpInfo:SampleName.VAL
 $(P)ExpInfo:SampleDescription.VAL
 $(P)ExpInfo:UserInfoUpdate.VAL
 $(P)ExpInfo:LensMagnification.VAL
+$(P)ExpInfo:LensResolution.VAL
 $(P)ExpInfo:ScintillatorType.VAL
 $(P)ExpInfo:Filters.VAL
 $(P)ExpInfo:FileName.VAL

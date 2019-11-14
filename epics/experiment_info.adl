@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams/7BM/experiment_info.adl"
+	name="/local/decarlo/conda/DTagging/epics/experiment_info.adl"
 	version=030111
 }
 display {
 	object {
-		x=449
-		y=711
+		x=439
+		y=703
 		width=500
-		height=940
+		height=960
 	}
 	clr=14
 	bclr=4
@@ -103,7 +103,7 @@ text {
 composite {
 	object {
 		x=5
-		y=374
+		y=398
 		width=490
 		height=160
 	}
@@ -112,7 +112,7 @@ composite {
 		rectangle {
 			object {
 				x=5
-				y=374
+				y=398
 				width=490
 				height=160
 			}
@@ -125,7 +125,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=378
+				y=402
 				width=119
 				height=20
 			}
@@ -138,7 +138,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=400
+				y=424
 				width=119
 				height=20
 			}
@@ -151,7 +151,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=422
+				y=446
 				width=119
 				height=20
 			}
@@ -164,7 +164,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=488
+				y=512
 				width=119
 				height=20
 			}
@@ -177,7 +177,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=510
+				y=534
 				width=119
 				height=20
 			}
@@ -190,7 +190,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=444
+				y=468
 				width=119
 				height=20
 			}
@@ -203,7 +203,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=466
+				y=490
 				width=119
 				height=20
 			}
@@ -216,7 +216,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=378
+				y=402
 				width=249
 				height=20
 			}
@@ -232,7 +232,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=400
+				y=424
 				width=249
 				height=20
 			}
@@ -248,7 +248,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=422
+				y=446
 				width=249
 				height=20
 			}
@@ -264,7 +264,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=444
+				y=468
 				width=249
 				height=20
 			}
@@ -280,7 +280,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=466
+				y=490
 				width=249
 				height=20
 			}
@@ -296,7 +296,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=488
+				y=512
 				width=249
 				height=20
 			}
@@ -312,7 +312,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=510
+				y=534
 				width=249
 				height=20
 			}
@@ -330,7 +330,7 @@ composite {
 composite {
 	object {
 		x=5
-		y=536
+		y=560
 		width=490
 		height=94
 	}
@@ -339,7 +339,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=562
+				y=586
 				width=119
 				height=20
 			}
@@ -352,7 +352,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=540
+				y=564
 				width=119
 				height=20
 			}
@@ -365,7 +365,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=584
+				y=608
 				width=119
 				height=20
 			}
@@ -378,7 +378,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=606
+				y=630
 				width=119
 				height=20
 			}
@@ -391,7 +391,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=606
+				y=630
 				width=249
 				height=20
 			}
@@ -407,7 +407,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=584
+				y=608
 				width=249
 				height=20
 			}
@@ -423,7 +423,7 @@ composite {
 		menu {
 			object {
 				x=243
-				y=562
+				y=586
 				width=150
 				height=20
 			}
@@ -436,7 +436,7 @@ composite {
 		menu {
 			object {
 				x=243
-				y=540
+				y=564
 				width=150
 				height=20
 			}
@@ -449,7 +449,7 @@ composite {
 		rectangle {
 			object {
 				x=5
-				y=536
+				y=560
 				width=490
 				height=94
 			}
@@ -464,7 +464,7 @@ composite {
 composite {
 	object {
 		x=5
-		y=632
+		y=656
 		width=490
 		height=180
 	}
@@ -473,7 +473,7 @@ composite {
 		rectangle {
 			object {
 				x=5
-				y=632
+				y=656
 				width=490
 				height=180
 			}
@@ -486,7 +486,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=636
+				y=660
 				width=119
 				height=20
 			}
@@ -499,7 +499,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=658
+				y=682
 				width=119
 				height=20
 			}
@@ -512,7 +512,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=680
+				y=704
 				width=119
 				height=20
 			}
@@ -525,7 +525,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=702
+				y=726
 				width=119
 				height=20
 			}
@@ -538,7 +538,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=724
+				y=748
 				width=119
 				height=20
 			}
@@ -551,7 +551,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=746
+				y=770
 				width=119
 				height=20
 			}
@@ -564,7 +564,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=768
+				y=792
 				width=119
 				height=20
 			}
@@ -577,7 +577,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=790
+				y=814
 				width=119
 				height=20
 			}
@@ -590,7 +590,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=790
+				y=814
 				width=249
 				height=20
 			}
@@ -606,7 +606,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=768
+				y=792
 				width=249
 				height=20
 			}
@@ -622,7 +622,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=746
+				y=770
 				width=249
 				height=20
 			}
@@ -638,7 +638,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=724
+				y=748
 				width=249
 				height=20
 			}
@@ -654,7 +654,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=702
+				y=726
 				width=249
 				height=20
 			}
@@ -670,7 +670,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=680
+				y=704
 				width=249
 				height=20
 			}
@@ -686,7 +686,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=658
+				y=682
 				width=249
 				height=20
 			}
@@ -702,7 +702,7 @@ composite {
 		menu {
 			object {
 				x=243
-				y=636
+				y=660
 				width=150
 				height=20
 			}
@@ -714,237 +714,52 @@ composite {
 		}
 	}
 }
-composite {
+rectangle {
 	object {
 		x=5
 		y=212
 		width=490
-		height=160
+		height=180
 	}
-	"composite name"=""
-	children {
-		rectangle {
-			object {
-				x=5
-				y=212
-				width=490
-				height=160
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-		}
-		text {
-			object {
-				x=114
-				y=215
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Lens Mag (x)"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=215
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:LensMagnification"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=237
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Scin Type"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=237
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:ScintillatorType"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=303
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Filters"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=303
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:Filters"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=325
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:SampleName"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=325
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Sample Name"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=259
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Scin Thickness (um)"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=259
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:ScintillatorThickness"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=281
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Sam-Det dist (mm)"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=281
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:SampleDetectorDistance"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text update" {
-			object {
-				x=243
-				y=347
-				width=249
-				height=20
-			}
-			monitor {
-				chan="$(PG)HDF1:FileName"
-				clr=54
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		text {
-			object {
-				x=114
-				y=347
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="File Name"
-			align="horiz. right"
-		}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+}
+text {
+	object {
+		x=114
+		y=215
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Lens Mag (x)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=215
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:LensMagnification"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
 	}
 }
 composite {
 	object {
 		x=5
-		y=814
+		y=838
 		width=490
 		height=120
 	}
@@ -953,7 +768,7 @@ composite {
 		rectangle {
 			object {
 				x=5
-				y=814
+				y=838
 				width=490
 				height=120
 			}
@@ -966,7 +781,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=820
+				y=844
 				width=119
 				height=20
 			}
@@ -979,7 +794,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=820
+				y=844
 				width=249
 				height=20
 			}
@@ -995,7 +810,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=842
+				y=866
 				width=119
 				height=20
 			}
@@ -1008,7 +823,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=842
+				y=866
 				width=249
 				height=20
 			}
@@ -1024,7 +839,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=864
+				y=888
 				width=119
 				height=20
 			}
@@ -1037,7 +852,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=864
+				y=888
 				width=249
 				height=20
 			}
@@ -1053,7 +868,7 @@ composite {
 		menu {
 			object {
 				x=243
-				y=886
+				y=910
 				width=150
 				height=20
 			}
@@ -1066,7 +881,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=886
+				y=910
 				width=119
 				height=20
 			}
@@ -1079,7 +894,7 @@ composite {
 		text {
 			object {
 				x=114
-				y=908
+				y=932
 				width=119
 				height=20
 			}
@@ -1092,7 +907,7 @@ composite {
 		"text entry" {
 			object {
 				x=243
-				y=908
+				y=932
 				width=249
 				height=20
 			}
@@ -1380,5 +1195,208 @@ rectangle {
 		clr=14
 		fill="outline"
 		width=2
+	}
+}
+text {
+	object {
+		x=114
+		y=257
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Scin Type"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=257
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:ScintillatorType"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=279
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Scin Thickness (um)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=279
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:ScintillatorThickness"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=301
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sam-Det dist (mm)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=301
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:SampleDetectorDistance"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=323
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Filters"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=323
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:Filters"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=345
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Name"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=345
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:SampleName"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=367
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="File Name"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=243
+		y=367
+		width=249
+		height=20
+	}
+	monitor {
+		chan="$(PG)HDF1:FileName"
+		clr=54
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=235
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Resolution (um/pixel)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=235
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:LensResolution"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
 	}
 }
