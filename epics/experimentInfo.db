@@ -136,134 +136,149 @@ record(waveform, "$(P)ExpInfo:FileName") {
 
 record(bo, "$(P)ExpInfo:UseFurnace") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(ZNAM, "False")
-	 field(ONAM, "True")
+    field(DTYP, "Soft Channel")
+    field(ZNAM, "False")
+    field(ONAM, "True")
 }
 
 record(mbbo, "$(P)ExpInfo:WhiteFieldMotion") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(ZRVL, "0")
-	 field(ONVL, "1")
-	 field(TWVL, "2")
-	 field(ZRST, "Freeze")
-	 field(ONST, "Horizontal")
-	 field(TWST, "Vertical")
+    field(DTYP, "Soft Channel")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(ZRST, "Freeze")
+    field(ONST, "Horizontal")
+    field(TWST, "Vertical")
 }
 
 record(mbbo, "$(P)ExpInfo:RemoteDataTransfer") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(ZRVL, "0")
-	 field(ONVL, "1")
-	 field(ZRST, "Disabled")
-	 field(ONST, "Enabled")
+    field(DTYP, "Soft Channel")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(ZRST, "Disabled")
+    field(ONST, "Enabled")
 }
 
 record(mbbo, "$(P)ExpInfo:ScanType") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(ZRVL, "0")
-	 field(ONVL, "1")
-	 field(TWVL, "2")
-	 field(THVL, "3")
-	 field(ZRST, "Sleep")
-	 field(ONST, "Vertical")
-	 field(TWST, "Horizontal")
-	 field(THST, "Mosaic")
+    field(DTYP, "Soft Channel")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(THVL, "3")
+    field(ZRST, "Sleep")
+    field(ONST, "Vertical")
+    field(TWST, "Horizontal")
+    field(THST, "Mosaic")
 }
 
 record(longout, "$(P)ExpInfo:NumProjections") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(DRVL, "0")
-	 field(DRVH, "10000000")
+    field(DTYP, "Soft Channel")
+    field(DRVL, "0")
+    field(DRVH, "10000000")
 }
 
 record(longout, "$(P)ExpInfo:NumWhiteImages") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(DRVL, "0")
-	 field(DRVH, "10000000")
+    field(DTYP, "Soft Channel")
+    field(DRVL, "0")
+    field(DRVH, "10000000")
 }
 
 record(longout, "$(P)ExpInfo:NumDarkImages") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
-	 field(DRVL, "0")
-	 field(DRVH, "10000000")
+    field(DTYP, "Soft Channel")
+    field(DRVL, "0")
+    field(DRVH, "10000000")
 }
 
 record(ao, "$(P)ExpInfo:ScintillatorThickness") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:SampleDetectorDistance") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:SampleInPosition") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:SampleOutPosition") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 record(ao, "$(P)ExpInfo:SampleRotationStart") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 record(ao, "$(P)ExpInfo:SampleRotationEnd") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:FurnaceInPosition") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:FurnaceOutPosition") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:SleepTime") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:VerticalScanStart") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:VerticalScanEnd") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:VerticalScanStepSize") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:HorizontalScanStart") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:HorizontalScanEnd") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
 }
 
 record(ao, "$(P)ExpInfo:HorizontalScanStepSize") {
     field(SCAN, "Passive")
-	 field(DTYP, "Soft Channel")
+    field(DTYP, "Soft Channel")
+}
+
+record(ao, "$(P)ExpInfo:Energy") {
+    field(SCAN, "Passive")
+    field(DTYP, "Soft Channel")
+}
+
+record(ao, "$(P)ExpInfo:CCDPixelSize") {
+    field(SCAN, "Passive")
+    field(DTYP, "Soft Channel")
+}
+
+record(ao, "$(P)ExpInfo:ImageResolution") {
+    field(SCAN, "Passive")
+    field(DTYP, "Soft Channel")
 }

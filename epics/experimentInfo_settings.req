@@ -38,3 +38,6 @@ $(P)ExpInfo:VerticalScanStepSize.VAL
 $(P)ExpInfo:HorizontalScanStart.VAL
 $(P)ExpInfo:HorizontalScanEnd.VAL
 $(P)ExpInfo:HorizontalScanStepSize.VAL
+$(P)ExpInfo:Energy.VAL
+$(P)ExpInfo:CCDPixelSize.VAL
+$(P)ExpInfo:ImageResolution.VAL
