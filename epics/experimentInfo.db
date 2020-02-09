@@ -75,7 +75,7 @@ record(waveform, "$(P)ExpInfo:LensMagnification") {
 record(ao, "$(P)ExpInfo:ImageResolution") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
-    field(PREC, 4)
+    field(PREC, 3)
 }
 
 record(waveform, "$(P)ExpInfo:ScintillatorType") {
@@ -198,84 +198,103 @@ record(longout, "$(P)ExpInfo:NumDarkImages") {
 record(ao, "$(P)ExpInfo:ScintillatorThickness") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:SampleDetectorDistance") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:SampleInPosition") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:SampleOutPosition") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
+
 record(ao, "$(P)ExpInfo:SampleRotationStart") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
+
 record(ao, "$(P)ExpInfo:SampleRotationEnd") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:FurnaceInPosition") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:FurnaceOutPosition") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:SleepTime") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:VerticalScanStart") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:VerticalScanEnd") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:VerticalScanStepSize") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:HorizontalScanStart") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:HorizontalScanEnd") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:HorizontalScanStepSize") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:Energy") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 record(ao, "$(P)ExpInfo:CCDPixelSize") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PREC, 3)
 }
 
 
