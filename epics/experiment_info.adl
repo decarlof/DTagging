@@ -1,6 +1,6 @@
 
 file {
-	name="/local/user2bmb/conda/DTagging/epics/experiment_info.adl"
+	name="/home/beams1/BCDA/DTagging/epics/experiment_info.adl"
 	version=030111
 }
 display {
@@ -1463,7 +1463,7 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)ExpInfo:CCDPielSize"
+		chan="$(P)ExpInfo:CCDPixelSize"
 		clr=14
 		bclr=4
 	}
