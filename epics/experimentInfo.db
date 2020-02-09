@@ -70,12 +70,12 @@ record(waveform, "$(P)ExpInfo:LensMagnification") {
     field(DTYP, "Soft Channel")
     field(NELM, "256")
     field(FTVL, "CHAR")
-    field(PRECISION, 4)
 }
 
 record(ao, "$(P)ExpInfo:ImageResolution") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
+    field(PRECISION, 4)
 }
 
 record(waveform, "$(P)ExpInfo:ScintillatorType") {
