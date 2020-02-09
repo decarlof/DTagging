@@ -43,6 +43,7 @@ record(waveform, "$(P)ExpInfo:ProposalTitle") {
     field(NELM, "256")
     field(FTVL, "CHAR")
 }
+
 record(waveform, "$(P)ExpInfo:SampleName") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
