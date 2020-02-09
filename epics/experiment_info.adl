@@ -1,14 +1,14 @@
 
 file {
-	name="/local/decarlo/conda/DTagging/epics/experiment_info.adl"
+	name="/local/user2bmb/conda/DTagging/epics/experiment_info.adl"
 	version=030111
 }
 display {
 	object {
-		x=439
-		y=703
+		x=797
+		y=502
 		width=500
-		height=960
+		height=1020
 	}
 	clr=14
 	bclr=4
@@ -1381,7 +1381,7 @@ text {
 	"basic attribute" {
 		clr=14
 	}
-	textix="Resolution (um/pixel)"
+	textix="Image Resolution (um/pixel)"
 	align="horiz. right"
 }
 "text entry" {
@@ -1392,7 +1392,78 @@ text {
 		height=20
 	}
 	control {
-		chan="$(P)ExpInfo:LensResolution"
+		chan="$(P)ExpInfo:ImageResolution"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=5
+		y=960
+		width=490
+		height=55
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+}
+text {
+	object {
+		x=114
+		y=966
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Energy"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=966
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:Energy"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=114
+		y=988
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="CCD Pixel Size (um)"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=988
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:CCDPielSize"
 		clr=14
 		bclr=4
 	}
