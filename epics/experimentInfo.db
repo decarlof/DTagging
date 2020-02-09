@@ -297,4 +297,13 @@ record(ao, "$(P)ExpInfo:CCDPixelSize") {
     field(PREC, 3)
 }
 
-
+record(mbbo, "$(P)ExpInfo:EnergyMode") {
+    field(SCAN, "Passive")
+    field(DTYP, "Soft Channel")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(ZRST, "Mono")
+    field(ONST, "Pink")
+    field(TWST, "White")
+}
