@@ -78,6 +78,10 @@ develop-eggs/
 dist/
 eggs/
 lib/
+
+# medm editor #
+###############
+*_BAK.adl
 lib64/
 parts/
 sdist/
