@@ -100,231 +100,220 @@ text {
 	textix="Time:"
 	align="horiz. right"
 }
-composite {
+rectangle {
 	object {
 		x=5
 		y=398
 		width=490
 		height=160
 	}
-	"composite name"=""
-	children {
-		rectangle {
-			object {
-				x=5
-				y=398
-				width=490
-				height=160
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-		}
-		text {
-			object {
-				x=114
-				y=402
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Num Projections"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=424
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Num White Fields"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=446
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Num Dark Fields"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=512
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Sample In Position"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=534
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Sample Out Position"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=468
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Sample Rotation Start"
-			align="horiz. right"
-		}
-		text {
-			object {
-				x=114
-				y=490
-				width=119
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			textix="Sample Rotation End"
-			align="horiz. right"
-		}
-		"text entry" {
-			object {
-				x=243
-				y=402
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:NumProjections"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=424
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:NumWhiteImages"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=446
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:NumDarkImages"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=468
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:SampleRotationStart"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=490
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:SampleRotationEnd"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=512
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:SampleInPosition"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
-		"text entry" {
-			object {
-				x=243
-				y=534
-				width=249
-				height=20
-			}
-			control {
-				chan="$(P)ExpInfo:SampleOutPosition"
-				clr=14
-				bclr=4
-			}
-			format="string"
-			limits {
-			}
-		}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=2
+	}
+}
+text {
+	object {
+		x=114
+		y=402
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Num Projections"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=424
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Num White Fields"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=446
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Num Dark Fields"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=512
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample In Position"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=534
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Out Position"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=468
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Rotation Start"
+	align="horiz. right"
+}
+text {
+	object {
+		x=114
+		y=490
+		width=119
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Sample Rotation End"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=243
+		y=402
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:NumProjections"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=424
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:NumWhiteImages"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=446
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:NumDarkImages"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=468
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:SampleRotationStart"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=490
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:SampleRotationEnd"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=512
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:SampleInPosition"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=243
+		y=534
+		width=249
+		height=20
+	}
+	control {
+		chan="$(P)ExpInfo:SampleOutPosition"
+		clr=14
+		bclr=4
+	}
+	format="string"
+	limits {
 	}
 }
 composite {
@@ -1396,7 +1385,6 @@ text {
 		clr=14
 		bclr=4
 	}
-	format="string"
 	limits {
 	}
 }
@@ -1438,7 +1426,6 @@ text {
 		clr=14
 		bclr=4
 	}
-	format="string"
 	limits {
 	}
 }
@@ -1467,7 +1454,6 @@ text {
 		clr=14
 		bclr=4
 	}
-	format="string"
 	limits {
 	}
 }
