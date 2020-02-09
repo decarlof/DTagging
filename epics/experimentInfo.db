@@ -222,13 +222,13 @@ record(ao, "$(P)ExpInfo:SampleOutPosition") {
 record(ao, "$(P)ExpInfo:SampleRotationStart") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
-    field(PREC, 3)
+    field(PREC, 1)
 }
 
 record(ao, "$(P)ExpInfo:SampleRotationEnd") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
-    field(PREC, 3)
+    field(PREC, 1)
 }
 
 record(ao, "$(P)ExpInfo:FurnaceInPosition") {
@@ -288,7 +288,7 @@ record(ao, "$(P)ExpInfo:HorizontalScanStepSize") {
 record(ao, "$(P)ExpInfo:Energy") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
-    field(PREC, 3)
+    field(PREC, 2)
 }
 
 record(ao, "$(P)ExpInfo:CCDPixelSize") {
