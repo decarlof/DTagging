@@ -70,7 +70,7 @@ record(waveform, "$(P)ExpInfo:LensMagnification") {
     field(DTYP, "Soft Channel")
     field(NELM, "256")
     field(FTVL, "CHAR")
-    field(PRECISION, "4")
+    field(PRECISION, 4)
 }
 
 record(ao, "$(P)ExpInfo:ImageResolution") {
