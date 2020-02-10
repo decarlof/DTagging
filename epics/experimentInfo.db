@@ -65,10 +65,11 @@ record(waveform, "$(P)ExpInfo:UserInfoUpdate") {
     field(FTVL, "CHAR")
 }
 
-record(ao, "$(P)ExpInfo:LensMagnification") {
+record(waveform, "$(P)ExpInfo:LensMagnification") {
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
-    field(PREC, 3)
+    field(NELM, "256")
+    field(FTVL, "CHAR")
 }
 
 record(ao, "$(P)ExpInfo:ImageResolution") {
