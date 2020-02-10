@@ -201,6 +201,8 @@ record(ao, "$(P)ExpInfo:ScintillatorThickness") {
 }
 
 record(ao, "$(P)ExpInfo:SampleDetectorDistance") {
+    field(DOL, "2bma:m22.VAL CP")
+    field(OMSL, "closed_loop")
     field(SCAN, "Passive")
     field(DTYP, "Soft Channel")
     field(PREC, 3)
