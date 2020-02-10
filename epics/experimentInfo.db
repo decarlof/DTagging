@@ -303,7 +303,7 @@ record(mbbo, "$(P)ExpInfo:EnergyMode") {
     field(ZRVL, "0")
     field(ONVL, "1")
     field(TWVL, "2")
-    field(ZRST, "Mono")
-    field(ONST, "Pink")
-    field(TWST, "White")
+    field(ZRST, "mono")
+    field(ONST, "pink")
+    field(TWST, "white")
 }
