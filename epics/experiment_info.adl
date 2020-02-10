@@ -745,300 +745,6 @@ menu {
 composite {
 	object {
 		x=4
-		y=271
-		width=490
-		height=200
-	}
-	"composite name"=""
-	children {
-		composite {
-			object {
-				x=113
-				y=275
-				width=378
-				height=192
-			}
-			"composite name"=""
-			children {
-				text {
-					object {
-						x=113
-						y=275
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Lens Mag (x)"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=275
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:LensMagnification"
-						clr=14
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=337
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Scin Type"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=337
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:ScintillatorType"
-						clr=14
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=359
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Scin Thickness (um)"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=359
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:ScintillatorThickness"
-						clr=14
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=381
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Sam-Det dist (mm)"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=381
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:SampleDetectorDistance"
-						clr=14
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=403
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Filters"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=403
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:Filters"
-						clr=14
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=425
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Sample Name"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=425
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:SampleName"
-						clr=14
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=447
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="File Name"
-					align="horiz. right"
-				}
-				"text update" {
-					object {
-						x=242
-						y=447
-						width=249
-						height=20
-					}
-					monitor {
-						chan="$(PG)HDF1:FileName"
-						clr=54
-						bclr=4
-					}
-					format="string"
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=295
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="Image Resolution (um/pixel)"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=295
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:ImageResolution"
-						clr=14
-						bclr=4
-					}
-					limits {
-					}
-				}
-				text {
-					object {
-						x=113
-						y=317
-						width=119
-						height=20
-					}
-					"basic attribute" {
-						clr=14
-					}
-					textix="CCD Pixel Size (um)"
-					align="horiz. right"
-				}
-				"text entry" {
-					object {
-						x=242
-						y=317
-						width=249
-						height=20
-					}
-					control {
-						chan="$(P)ExpInfo:CCDPixelSize"
-						clr=14
-						bclr=4
-					}
-					limits {
-					}
-				}
-			}
-		}
-		rectangle {
-			object {
-				x=4
-				y=271
-				width=490
-				height=200
-			}
-			"basic attribute" {
-				clr=14
-				fill="outline"
-				width=2
-			}
-		}
-	}
-}
-composite {
-	object {
-		x=4
 		y=473
 		width=490
 		height=160
@@ -1507,6 +1213,288 @@ composite {
 				y=732
 				width=490
 				height=180
+			}
+			"basic attribute" {
+				clr=14
+				fill="outline"
+				width=2
+			}
+		}
+	}
+}
+composite {
+	object {
+		x=4
+		y=271
+		width=490
+		height=200
+	}
+	"composite name"=""
+	children {
+		text {
+			object {
+				x=113
+				y=275
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Lens Mag (x)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=275
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:LensMagnification"
+				clr=14
+				bclr=4
+			}
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=337
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Scin Type"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=337
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ScintillatorType"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=359
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Scin Thickness (um)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=359
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ScintillatorThickness"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=381
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sam-Det dist (mm)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=381
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleDetectorDistance"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=403
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Filters"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=403
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:Filters"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=425
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Sample Name"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=425
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:SampleName"
+				clr=14
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=447
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="File Name"
+			align="horiz. right"
+		}
+		"text update" {
+			object {
+				x=242
+				y=447
+				width=249
+				height=20
+			}
+			monitor {
+				chan="$(PG)HDF1:FileName"
+				clr=54
+				bclr=4
+			}
+			format="string"
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=295
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="Image Resolution (um/pixel)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=295
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:ImageResolution"
+				clr=14
+				bclr=4
+			}
+			limits {
+			}
+		}
+		text {
+			object {
+				x=113
+				y=317
+				width=119
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			textix="CCD Pixel Size (um)"
+			align="horiz. right"
+		}
+		"text entry" {
+			object {
+				x=242
+				y=317
+				width=249
+				height=20
+			}
+			control {
+				chan="$(P)ExpInfo:CCDPixelSize"
+				clr=14
+				bclr=4
+			}
+			limits {
+			}
+		}
+		rectangle {
+			object {
+				x=4
+				y=271
+				width=490
+				height=200
 			}
 			"basic attribute" {
 				clr=14
