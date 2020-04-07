@@ -65,8 +65,11 @@ __copyright__ = "Copyright (c) 2015-2016, UChicago Argonne, LLC."
 __docformat__ = 'restructuredtext en'
 
 def pv_daemon():
+
     # set the experiment date 
-    now = datetime.datetime.today()
+    # testing date
+    now = datetime(2016, 2, 19, 10, 10, 30)
+    # now = datetime.datetime.today()
 
     # set iso format time
     central = pytz.timezone('US/Central')
