@@ -68,8 +68,8 @@ def pv_daemon():
 
     # set the experiment date 
     # testing date
-    now = datetime.datetime(2016, 2, 19, 10, 10, 30)
-    # now = datetime.datetime.today()
+    # now = datetime.datetime(2016, 2, 19, 10, 10, 30)
+    now = datetime.datetime.today()
 
     # set iso format time
     central = pytz.timezone('US/Central')
