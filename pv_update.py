@@ -56,7 +56,8 @@ import time
 import sys
 
 # set ~/scheduling.ini to match your configuration
-import dmagic.scheduling as sch
+from dmagic import scheduling
+
 import pv_beamline_2bm as pv
 
 __author__ = "Francesco De Carlo"
@@ -76,20 +77,19 @@ def pv_daemon():
     print (local_time_iso)
 
     # get PI information
-    user_name, user_last_name, user_institution, user_badge, user_email = sch.find_pi_info(now)
-    # print(user_name, user_last_name, user_institution, user_badge, user_email)
-    pv.user_name.put(user_name)
-    pv.user_last_name.put(user_last_name)    
-    pv.user_affiliation.put(user_institution)
-    pv.user_email.put(user_email)
-    pv.user_badge.put(user_badge)
-      
+    pi = scheduling.find_pi_info(now)
+    pv.user_name.put(pi['name'])
+    pv.user_last_name.put(pi['last_name'])    
+    pv.user_affiliation.put(pi['institution'])
+    pv.user_email.put(pi['email'])
+    pv.user_badge.put(pi['badge'])
+    
     # get experiment information
-    proposal_number, proposal_title, experiment_date_year_month = sch.find_experiment_info(now)
-    pv.proposal_number.put(proposal_number)
-    pv.proposal_title.put(proposal_title)
-    pv.experiment_date.put(experiment_date_year_month)
-    # print(proposal_number, proposal_title, experiment_date_year_month)
+    experiment = scheduling.find_experiment_info(now)
+    pv.proposal_number.put(experiment['id'])
+    pv.proposal_title.put(experiment['title'])
+    pv.experiment_date.put(experiment['start'])
+
 try:
     while True:
         pv_daemon()
