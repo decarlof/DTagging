@@ -1,10 +1,12 @@
+
+===================================================
+WARNING: THIS REPOSITORY IS NOT MAINTAINED  ANYMORE
+===================================================
+ALL DTAGGING FUNCTIONALY HAVE BEEN INCLUTED IN https://dmagic.readthedocs.io/
+
 ========
 DTagging
 ========
-
-
-.. warning:: If your python installation is in a location different from #!/usr/bin/env python please edit the first line of the bin/dmagic file to match yours.
-
 
 `DTagging <https://github.com/decarlof/DTagging>`_  is used at the Advanced Photon Source Imaging Group
 to generate EPICS Process Variables (PVs)for storing the information associated with the current user including:
